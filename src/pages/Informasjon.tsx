@@ -5,22 +5,23 @@ import AnimatedImage from "../Components/AnimatedImage";
 import PageWrapper from "../Components/PageWrapper";
 
 const Informasjon = () => {
+  const alt = "temp";
   return (
     <PageWrapper>
       <Stack flexDirection={"row"} gap={1} marginLeft={8} marginRight={8}>
         <AnimatedImage
           style={{ maxWidth: "400px", minWidth: "100px" }}
-          alt="Erlend og Sofie i Indonesia"
+          alt={alt}
           src={Sjo}
         />
         <AnimatedImage
           style={{ maxWidth: "400px", minWidth: "100px" }}
-          alt="Erlend og Sofie i Indonesia"
+          alt={alt}
           src={Sjo}
         />
         <AnimatedImage
           style={{ maxWidth: "400px", minWidth: "100px" }}
-          alt="Erlend og Sofie i Indonesia"
+          alt={alt}
           src={Sjo}
         />
       </Stack>

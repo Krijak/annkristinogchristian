@@ -12,7 +12,7 @@ const TransportOgOvernatting = () => {
         maxWidth={{ xs: "400px", sm: "400px", lg: "500px" }}
         paddingLeft={9}
         paddingRight={9}
-        alt="Erlend og Sofie på båt"
+        alt="temp"
         src={TransportogovernattingImg}
       />
       <Stack maxWidth={"600px"} mt={4} padding={6}>
@@ -35,7 +35,7 @@ const TransportOgOvernatting = () => {
       >
         <AnimatedImage
           width={"50%"}
-          alt="Erlend og Sofie på teplantasje "
+          alt="temp"
           style={{ transform: "rotateY(180deg)" }}
           src={TransportogovernattingImg}
         />
