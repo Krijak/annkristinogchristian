@@ -80,7 +80,7 @@ const Topbar = () => {
       <Box>
         <Box mb={8} mt={2}>
           <Button onClick={() => handleDrawerToggle} aria-label="Lukk sidemeny">
-            <img src={Nameandmonogram} alt="Lukk sidemeny" width={"250px"} />
+            <img src={Nameandmonogram} alt="Lukk sidemeny" width={"130px"} />
           </Button>
         </Box>
         <List>
@@ -121,7 +121,7 @@ const Topbar = () => {
       >
         <Toolbar>
           {!isOnMain && (
-            <Box ml={2} mr={2} width={{ xs: "250px", sm: "300px" }}>
+            <Box padding={3} width={{ xs: "200px", sm: "200px" }}>
               <img src={Name} width={"100%"} />
             </Box>
           )}

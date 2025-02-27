@@ -35,7 +35,7 @@ const Main = () => {
             paddingTop={{ xs: 2, sm: 4 }}
           />
         </StyledNavLink>
-        <Box width={{ xs: "300px", sm: "400px" }} padding={"0 4"}>
+        <Box width={{ xs: "150px", sm: "200px" }} padding={"0 4"}>
           <img src={Name} alt={alt} width={"100%"} />
         </Box>
       </PageWrapper>
