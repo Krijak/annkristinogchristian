@@ -1,6 +1,6 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { Button, Link, Stack, styled, Typography } from "@mui/material";
+import { Button, Stack, styled, Typography } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -10,7 +10,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import Toolbar from "@mui/material/Toolbar";
 import * as React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Name from "../../public/name.svg";
 import Nameandmonogram from "../../public/nameandmonogram.png";
 
@@ -126,7 +126,7 @@ const Topbar = () => {
         <Toolbar>
           {!isOnMain && (
             <Box padding={3} width={{ xs: "200px", sm: "200px" }}>
-              <Link href="/">
+              <Link to="/">
                 <img src={Name} width={"100%"} />
               </Link>
             </Box>
