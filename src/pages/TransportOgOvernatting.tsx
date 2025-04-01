@@ -1,5 +1,7 @@
 import { Box, Link, Stack, Typography } from "@mui/material";
-import TransportogovernattingImg from "../../public/FrontpageImages/Transportogovernatting.jpg";
+import Epler from "../../public/epler.jpg";
+import Pir from "../../public/pir.jpg";
+import Pirer from "../../public/pirer.jpg";
 import AnimatedImage from "../Components/AnimatedImage";
 import FullWidthStack from "../Components/FullWidthStack";
 import PageWrapper from "../Components/PageWrapper";
@@ -12,8 +14,8 @@ const TransportOgOvernatting = () => {
         maxWidth={{ xs: "400px", sm: "400px", lg: "500px" }}
         paddingLeft={9}
         paddingRight={9}
-        alt="temp"
-        src={TransportogovernattingImg}
+        alt="Pir"
+        src={Pir}
       />
       <Stack maxWidth={"600px"} mt={4} padding={6}>
         <Typography variant="h1">OVERNATTING</Typography>
@@ -55,17 +57,8 @@ const TransportOgOvernatting = () => {
         justifyContent={"center"}
         gap={2}
       >
-        <AnimatedImage
-          width={"50%"}
-          alt="temp"
-          style={{ transform: "rotateY(180deg)" }}
-          src={TransportogovernattingImg}
-        />
-        <AnimatedImage
-          width={"30%"}
-          alt="Azorene "
-          src={TransportogovernattingImg}
-        />
+        <AnimatedImage width={"50%"} alt="Epler i kurv" src={Epler} />
+        <AnimatedImage width={"30%"} alt="Pirer" src={Pirer} />
       </Stack>
       <Stack alignItems={"center"}>
         <Box maxWidth={"500px"} mt={5} padding={6}>

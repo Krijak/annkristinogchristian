@@ -1,8 +1,8 @@
 import { createTheme } from "@mui/material/styles";
 
 const darkRed = "#510629";
-const defaultBackground = "#F2E3E3";
-const paperBackground = "#ebd6d6";
+const defaultBackground = "#f9f6f0"; //"#F2E3E3";
+const paperBackground = "rgba(224, 220, 217, 0.32)"; //"#ebd6d6";
 const success = "#547b57";
 const black = "#000";
 

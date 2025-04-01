@@ -1,6 +1,6 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { Button, Stack, styled, Typography } from "@mui/material";
+import { Button, Link, Stack, styled, Typography } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -25,7 +25,7 @@ const isExternalLinks = (title: string): boolean =>
   [onskeliste, rsvp].includes(title);
 
 const navItems: NavItem[] = [
-  { title: "Hjem", href: "/" },
+  { title: "Forside", href: "/" },
   { title: "Program", href: "program" },
   { title: "Transport og overnatting", href: "transportogovernatting" },
   { title: "Informasjon", href: "informasjon" },
@@ -126,7 +126,9 @@ const Topbar = () => {
         <Toolbar>
           {!isOnMain && (
             <Box padding={3} width={{ xs: "200px", sm: "200px" }}>
-              <img src={Name} width={"100%"} />
+              <Link href="/">
+                <img src={Name} width={"100%"} />
+              </Link>
             </Box>
           )}
           <IconButton
