@@ -45,7 +45,7 @@ const TimeLine = () => {
       </TimeLineItem>
       <TimeLineItem
         isLast
-        header={<Typography variant="h2">01 : 30</Typography>}
+        header={<Typography variant="h2">02 : 00</Typography>}
       >
         <Typography
           variant="h2"
