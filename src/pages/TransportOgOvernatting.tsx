@@ -27,8 +27,8 @@ const TransportOgOvernatting = () => {
           >
             Sarpemyrveien 51
           </Link>{" "}
-          i Larkollen hos Turid og Svein. Det fins hus og hytter i nærheten man
-          kan leie på Airbnb.
+          i Larkollen hos Turid og Svein. Det finnes hus og hytter i nærheten
+          man kan leie på Airbnb.
         </Typography>
         <Typography mt={2}>
           Nærmeste hotell er vakre{" "}
@@ -65,8 +65,9 @@ const TransportOgOvernatting = () => {
           <Typography variant="h1">TRANSPORT</Typography>
           <Typography mt={3}>
             Det er forskjellige kollektivtilbud avhengig av hvor dere reiser
-            fra. Når dere svarer på RSVP, la oss vite om du har transportbehov,
-            eller ønsker parkering slik at vi kan møte deres behov.
+            fra. Når dere svarer på RSVP, la oss vite om dere har
+            transportbehov, eller ønsker parkering slik at vi kan møte deres
+            behov.
           </Typography>
         </Box>
       </Stack>
