@@ -7,8 +7,8 @@ import Topbar from "./Components/Topbar";
 import Fredag from "./pages/Fredag";
 import Informasjon from "./pages/Informasjon";
 import Loading from "./pages/Loading";
-import Loerdag from "./pages/Loerdag";
 import Main from "./pages/Main";
+import Program from "./pages/Program";
 import TransportOgOvernatting from "./pages/TransportOgOvernatting";
 import theme from "./theme";
 
@@ -28,7 +28,7 @@ function App() {
               <Route path="/" element={<Main />} />
               <Route path="/main" element={<Main />} />
               <Route path="/fredag" element={<Fredag />} />
-              <Route path="/lørdag" element={<Loerdag />} />
+              <Route path="/program" element={<Program />} />
               <Route path="/informasjon" element={<Informasjon />} />
               <Route
                 path="/transportogovernatting"

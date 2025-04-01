@@ -1,4 +1,4 @@
-import { Box, Link, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import KirkeLandskap from "../../public/Kirkelandskap.jpg";
 import AnimatedImage from "../Components/AnimatedImage";
 import DayAndDate from "../Components/DayAndDate";
@@ -9,63 +9,63 @@ const TimeLine = () => {
   return (
     <Box padding={6} pt={3}>
       <TimeLineItem header={<Typography variant="h2">13 : 00</Typography>}>
-        <Box mb={4} className={"apply-scroll-animation"}>
-          <Typography variant="h2">VIELSE</Typography>
-          <Typography>
-            Sted på sted
-            <br />
-            <Link mb={4} href="https://maps.app.goo.gl/TfHGsWy8UKy9Mvbm8">
-              Adresse 1, 0101 Sted
-            </Link>
-          </Typography>
-        </Box>
-      </TimeLineItem>
-      <TimeLineItem header={<Typography variant="h2">14 : 30</Typography>}>
-        <Box pb={4} className={"apply-scroll-animation"}>
-          <Typography variant="h2">BRYLLUPSFEST</Typography>
-          <Typography>
-            Sted på sted
-            <br />
-            <Link mb={4} href="https://maps.app.goo.gl/TfHGsWy8UKy9Mvbm8">
-              Adresse 1, 0101 Sted
-            </Link>
-          </Typography>
-        </Box>
-      </TimeLineItem>
-      <TimeLineItem header={<Typography variant="h2">15 : 00</Typography>}>
-        <Typography marginBottom={2} className={"apply-scroll-animation"}>
-          Velkommen
+        <Typography
+          variant="h2"
+          marginBottom={2}
+          className={"apply-scroll-animation"}
+        >
+          Vielse i hagen
         </Typography>
       </TimeLineItem>
-      <TimeLineItem header={<Typography variant="h2">16 : 00</Typography>}>
-        <Typography marginBottom={2} className={"apply-scroll-animation"}>
+      <TimeLineItem header={<Typography variant="h2">14 : 00</Typography>}>
+        <Typography variant="h2" className={"apply-scroll-animation"}>
+          Bryllupskake og bobler
+        </Typography>
+        <Typography marginBottom={2} width={"300px"}>
+          Lett fingermat og underholdning mens brudeparet tar bilder
+        </Typography>
+      </TimeLineItem>
+      <TimeLineItem header={<Typography variant="h2">17 : 00</Typography>}>
+        <Typography variant="h2" className={"apply-scroll-animation"}>
           Bordsetting
         </Typography>
+        <Typography marginBottom={2} width={"300px"}>
+          Videre blir det middag, god stemning, kake og kaffe og selvfølgelig
+          fest!
+        </Typography>
       </TimeLineItem>
-      <TimeLineItem header={<Typography variant="h2">21 : 30</Typography>}>
-        <Typography marginBottom={2} className={"apply-scroll-animation"}>
-          Fest og moro
+      <TimeLineItem header={<Typography variant="h2">00 : 00</Typography>}>
+        <Typography
+          variant="h2"
+          marginBottom={2}
+          className={"apply-scroll-animation"}
+        >
+          Nattmat
         </Typography>
       </TimeLineItem>
       <TimeLineItem
         isLast
-        header={<Typography variant="h2">02 : 00</Typography>}
+        header={<Typography variant="h2">01 : 30</Typography>}
       >
-        <Typography marginBottom={2} className={"apply-scroll-animation"}>
-          Transport hjem
+        <Typography
+          variant="h2"
+          marginBottom={2}
+          className={"apply-scroll-animation"}
+        >
+          Festen avsluttes
         </Typography>
       </TimeLineItem>
     </Box>
   );
 };
 
-const Loerdag = () => {
+const Program = () => {
   return (
     <PageWrapper>
       <Stack>
         <DayAndDate
           day="Lørdag"
-          date="30 / 08 / 25"
+          date="16 / 08 / 25"
           pl={{ xs: 6, sm: 6, lg: 0 }}
         >
           BRYLLUPSDAGEN
@@ -76,9 +76,7 @@ const Loerdag = () => {
           maxWidth={"500px"}
         >
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            lobortis massa vitae nunc accumsan, in congue justo feugiat. Donec a
-            nisl sapien. Vivamus blandit pharetra quam a pellentesque.
+            Velkommen til hagebryllup i Sarpemyrveien 51 i Larkollen ☀️
           </Typography>
         </Box>
 
@@ -113,4 +111,4 @@ const Loerdag = () => {
   );
 };
 
-export default Loerdag;
+export default Program;

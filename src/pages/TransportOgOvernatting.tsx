@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import TransportogovernattingImg from "../../public/FrontpageImages/Transportogovernatting.jpg";
 import AnimatedImage from "../Components/AnimatedImage";
 import FullWidthStack from "../Components/FullWidthStack";
@@ -18,12 +18,34 @@ const TransportOgOvernatting = () => {
       <Stack maxWidth={"600px"} mt={4} padding={6}>
         <Typography variant="h1">OVERNATTING</Typography>
         <Typography mt={3}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          lobortis massa vitae nunc accumsan, in congue justo feugiat. Donec a
-          nisl sapien. Vivamus blandit pharetra quam a pellentesque. Sed vel
-          turpis vulputate, porttitor mi ut, iaculis nunc. Aliquam arcu enim,
-          commodo eget volutpat a, bibendum quis ipsum. Ut elementum feugiat
-          justo, id feugiat nisl blandit ac.
+          Bryllupet vil finne sted i{" "}
+          <Link
+            target="_blank"
+            href="https://www.google.com/maps/place/Sarpemyrveien+51,+1560+Larkollen/@59.5437826,10.3970255,119874m/data=!3m1!1e3!4m6!3m5!1s0x4646ac30434edf45:0x601079678cbb378!8m2!3d59.3227404!4d10.7066174!16s%2Fg%2F11crt8jv9d?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
+          >
+            Sarpemyrveien 51
+          </Link>{" "}
+          i Larkollen hos Turid og Svein. Det fins hus og hytter i nærheten man
+          kan leie på Airbnb.
+        </Typography>
+        <Typography mt={2}>
+          Nærmeste hotell er vakre{" "}
+          <Link
+            target="_blank"
+            href="https://www.stotvighotel.com/?gad_source=1&gbraid=0AAAAACP7TS6i_kDuILeuntSRl0uvN82wB&gclid=Cj0KCQjw16O_BhDNARIsAC3i2GBUtm4V8jkGZ7889syI08qUdPujxbvIYSrSXSRkSRoFrk9cTh4fS_MaAmCZEALw_wcB"
+          >
+            Støtvig hotell.
+          </Link>
+        </Typography>
+        <Typography mt={2}>
+          Det finnes også hotell i Moss, ca 15-20 min kjøring fra bryllypet.
+          Eksempelvis{" "}
+          <Link
+            target="_blank"
+            href="https://hotelriviera.no/?utm_campaign=bb-search-brand-exact-no&gad_source=1&gbraid=0AAAAAog91Ne69P3vs6-ndIy_vOw78E08j&gclid=Cj0KCQjw16O_BhDNARIsAC3i2GDjvCZ7Y44SYAs_X4-Ab2SpM5MQo2S87GzazL9-bPayU98RADnNcjUaAgKnEALw_wcB"
+          >
+            hotell Riviera.
+          </Link>
         </Typography>
       </Stack>
       <Stack
@@ -49,9 +71,9 @@ const TransportOgOvernatting = () => {
         <Box maxWidth={"500px"} mt={5} padding={6}>
           <Typography variant="h1">TRANSPORT</Typography>
           <Typography mt={3}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            lobortis massa vitae nunc accumsan, in congue justo feugiat. Donec a
-            nisl sapien.
+            Det er forskjellige kollektivtilbud avhengig av hvor dere reiser
+            fra. Når dere svarer på RSVP, la oss vite om du har transportbehov,
+            eller ønsker parkering slik at vi kan møte deres behov.
           </Typography>
         </Box>
       </Stack>
@@ -65,35 +87,40 @@ const TransportOgOvernatting = () => {
         >
           <Box maxWidth={"300px"}>
             <Typography mb={1} className={"apply-scroll-animation"}>
-              <b>Lorem ipsum</b>
+              <b>Fra Oslo</b>
             </Typography>
             <Typography className={"apply-scroll-animation"}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              lobortis massa vitae nunc accumsan, in congue justo feugiat. Donec
-              a nisl sapien. Vivamus blandit pharetra quam a pellentesque. Sed
-              vel turpis vulputate, porttitor mi ut, iaculis nunc.
+              Fra Oslo går det tog til Rygge togstasjon som tar 45 min. Det tar
+              1 time å kjøre fra Oslo til Larkollen
             </Typography>
           </Box>
           <Box maxWidth={"300px"}>
             <Typography mb={1} className={"apply-scroll-animation"}>
-              <b>Lorem ipsum</b>
+              <b>Fra Gardermoen</b>
             </Typography>
             <Typography className={"apply-scroll-animation"}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              lobortis massa vitae nunc accumsan, in congue justo feugiat. Donec
-              a nisl sapien. Vivamus blandit pharetra quam a pellentesque. Sed
-              vel turpis vulputate, porttitor mi ut, iaculis nunc.
+              Fra Gardermoen går det enten flybuss FB11 Fredrikstad som tar
+              1time og 40 min alternativt kan man ta tog til Oslo S og videre
+              tog til Moss/Rygge
             </Typography>
           </Box>
-          <Box maxWidth={"300px"} width={"100%"}>
+          <Box maxWidth={"300px"}>
             <Typography mb={1} className={"apply-scroll-animation"}>
-              <b>Lorem ipsum</b>
+              <b>Fra Rygge</b>
             </Typography>
             <Typography className={"apply-scroll-animation"}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              lobortis massa vitae nunc accumsan, in congue justo feugiat. Donec
-              a nisl sapien. Vivamus blandit pharetra quam a pellentesque. Sed
-              vel turpis vulputate, porttitor mi ut, iaculis nunc.
+              Fra Rygge togstasjon til bryllupet tar det 12 min å kjøre. Det er
+              dårlig med kollektivt, så dersom du kommer med toget fikser vi
+              biltransport.
+            </Typography>
+          </Box>
+          <Box maxWidth={"300px"}>
+            <Typography mb={1} className={"apply-scroll-animation"}>
+              <b>Fra Moss</b>
+            </Typography>
+            <Typography className={"apply-scroll-animation"}>
+              Det tar ca. 20 min å kjøre fra Moss til Larkollen med bil. Siste
+              tog til Oslo går i 23-tiden.
             </Typography>
           </Box>
         </Stack>

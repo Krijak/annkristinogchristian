@@ -26,8 +26,7 @@ const isExternalLinks = (title: string): boolean =>
 
 const navItems: NavItem[] = [
   { title: "Hjem", href: "/" },
-  { title: "Fredag", href: "fredag" },
-  { title: "Lørdag", href: "lørdag" },
+  { title: "Program", href: "program" },
   { title: "Transport og overnatting", href: "transportogovernatting" },
   { title: "Informasjon", href: "informasjon" },
   {
