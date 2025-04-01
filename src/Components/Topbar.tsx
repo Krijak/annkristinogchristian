@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
     title: rsvp,
     href: "https://docs.google.com/",
   },
-  { title: onskeliste, href: "https://onsk.no/" },
+  { title: onskeliste, href: "https://onsk.no/lister/vy9-yd9" },
 ];
 
 const MenuItem = ({
