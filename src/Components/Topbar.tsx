@@ -19,12 +19,31 @@ type NavItem = {
   href: string;
 };
 
+const onskeliste = "Ønskeliste";
+const rsvp = "RSVP";
+const isExternalLinks = (title: string): boolean =>
+  [onskeliste, rsvp].includes(title);
+
+const navItems: NavItem[] = [
+  { title: "Hjem", href: "/" },
+  { title: "Fredag", href: "fredag" },
+  { title: "Lørdag", href: "lørdag" },
+  { title: "Transport og overnatting", href: "transportogovernatting" },
+  { title: "Informasjon", href: "informasjon" },
+  {
+    title: rsvp,
+    href: "https://docs.google.com/",
+  },
+  { title: onskeliste, href: "https://onsk.no/lister/vy9-yd9" },
+];
+
 const MenuItem = ({
   title,
   href,
   locationPath,
 }: NavItem & { locationPath: string }) => {
   const isMainAndActive = href == "/" && locationPath == "/main";
+  const isExternal = isExternalLinks(title);
   return (
     <StyledNavLinkWrapper display={"inline"} title={title}>
       <NavLink
@@ -33,10 +52,9 @@ const MenuItem = ({
         className={({ isActive }) =>
           isActive || isMainAndActive ? "active" : ""
         }
-        target={title == "Ønskeliste" || title == "Rsvp" ? "_blank" : "_self"}
+        target={isExternal ? "_blank" : "_self"}
       >
-        {title}{" "}
-        {(title == "Ønskeliste" || title == "Rsvp") && <OpenInNewIcon />}
+        {title} {isExternal && <OpenInNewIcon />}
       </NavLink>
     </StyledNavLinkWrapper>
   );
@@ -51,19 +69,6 @@ const Topbar = () => {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
-  const navItems: NavItem[] = [
-    { title: "Hjem", href: "/" },
-    { title: "Fredag", href: "fredag" },
-    { title: "Lørdag", href: "lørdag" },
-    { title: "Transport og overnatting", href: "transportogovernatting" },
-    { title: "Informasjon", href: "informasjon" },
-    {
-      title: "Rsvp",
-      href: "https://docs.google.com/",
-    },
-    { title: "Ønskeliste", href: "https://onsk.no/" },
-  ];
 
   const drawer = (
     <Stack
