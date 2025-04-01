@@ -20,10 +20,8 @@ type NavItem = {
   href: string;
 };
 
-const onskeliste = "Ønskeliste";
-const rsvp = "RSVP";
-const isExternalLinks = (title: string): boolean =>
-  [onskeliste, rsvp].includes(title);
+const isExternalLinks = (href: string): boolean =>
+  [routes.onskeliste, routes.rsvp].includes(href);
 
 const navItems: NavItem[] = [
   { title: "Forside", href: routes.forside },
@@ -31,10 +29,10 @@ const navItems: NavItem[] = [
   { title: "Transport og overnatting", href: routes.transportOgOvernatting },
   { title: "Informasjon", href: routes.informasjon },
   {
-    title: rsvp,
+    title: "RSVP",
     href: routes.rsvp,
   },
-  { title: onskeliste, href: routes.onskeliste },
+  { title: "Ønskeliste", href: routes.onskeliste },
 ];
 
 const MenuItem = ({
@@ -43,7 +41,7 @@ const MenuItem = ({
   locationPath,
 }: NavItem & { locationPath: string }) => {
   const isMainAndActive = href == "/" && locationPath == "/main";
-  const isExternal = isExternalLinks(title);
+  const isExternal = isExternalLinks(href);
   return (
     <StyledNavLinkWrapper display={"inline"} title={title}>
       <NavLink
