@@ -4,13 +4,13 @@ import { Route, Routes } from "react-router";
 import { HashRouter } from "react-router-dom";
 import AppWrapper from "./Components/AppWrapper";
 import Topbar from "./Components/Topbar";
-import Fredag from "./pages/Fredag";
 import Informasjon from "./pages/Informasjon";
 import Loading from "./pages/Loading";
 import Main from "./pages/Main";
 import Program from "./pages/Program";
 import TransportOgOvernatting from "./pages/TransportOgOvernatting";
 import theme from "./theme";
+import { routes } from "./variables";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -25,13 +25,12 @@ function App() {
           <Topbar />
           {isLoaded && (
             <Routes>
-              <Route path="/" element={<Main />} />
-              <Route path="/main" element={<Main />} />
-              <Route path="/fredag" element={<Fredag />} />
-              <Route path="/program" element={<Program />} />
-              <Route path="/informasjon" element={<Informasjon />} />
+              <Route path={routes.forside} element={<Main />} />
+              <Route path={routes.main} element={<Main />} />
+              <Route path={routes.program} element={<Program />} />
+              <Route path={routes.informasjon} element={<Informasjon />} />
               <Route
-                path="/transportogovernatting"
+                path={routes.transportOgOvernatting}
                 element={<TransportOgOvernatting />}
               />
             </Routes>

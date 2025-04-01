@@ -1,10 +1,11 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import Flowers1 from "../../public/flowers_01.gif";
 import Flowers2 from "../../public/flowers_02.gif";
 import Flowers3 from "../../public/flowers_03.gif";
 
 import AnimatedImage from "../Components/AnimatedImage";
 import PageWrapper from "../Components/PageWrapper";
+import { routes } from "../variables";
 
 const Informasjon = () => {
   const alt = "Blomster";
@@ -33,7 +34,8 @@ const Informasjon = () => {
             RSVP
           </Typography>
           <Typography mt={1}>
-            Si ifra innen 1. mai dersom du ikke har anledning til å komme.
+            Si ifra <Link href={routes.rsvp}>her</Link> innen 1. mai om du har
+            eller ikke har anledning til å komme.
           </Typography>
         </Box>
         <Box className={"apply-scroll-animation"}>

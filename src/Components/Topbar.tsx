@@ -13,6 +13,7 @@ import * as React from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Name from "../../public/name.svg";
 import Nameandmonogram from "../../public/nameandmonogram.png";
+import { routes } from "../variables";
 
 type NavItem = {
   title: string;
@@ -25,15 +26,15 @@ const isExternalLinks = (title: string): boolean =>
   [onskeliste, rsvp].includes(title);
 
 const navItems: NavItem[] = [
-  { title: "Forside", href: "/" },
-  { title: "Program", href: "program" },
-  { title: "Transport og overnatting", href: "transportogovernatting" },
-  { title: "Informasjon", href: "informasjon" },
+  { title: "Forside", href: routes.forside },
+  { title: "Program", href: routes.program },
+  { title: "Transport og overnatting", href: routes.transportOgOvernatting },
+  { title: "Informasjon", href: routes.informasjon },
   {
     title: rsvp,
-    href: "https://docs.google.com/",
+    href: routes.rsvp,
   },
-  { title: onskeliste, href: "https://onsk.no/lister/vy9-yd9" },
+  { title: onskeliste, href: routes.onskeliste },
 ];
 
 const MenuItem = ({
