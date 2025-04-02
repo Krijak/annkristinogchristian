@@ -17,8 +17,7 @@ function App() {
   const [showLoading, setShowLoading] = useState(true);
 
   return (
-    // <HashRouter basename={import.meta.env.BASE_URL}>
-    <HashRouter>
+    <HashRouter basename={import.meta.env.BASE_URL}>
       <AppWrapper setIsLoaded={setIsLoaded} setShowLoading={setShowLoading}>
         <ThemeProvider theme={theme}>
           {!isLoaded && <Loading isLoading={showLoading} />}
