@@ -10,7 +10,7 @@ type RoutesType = {
 
 export const routes: RoutesType = {
   forside: "/",
-  main: "/",
+  main: "/main",
   program: "program",
   transportOgOvernatting: "transportogovernatting",
   informasjon: "informasjon",
