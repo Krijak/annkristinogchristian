@@ -86,7 +86,7 @@ const TransportOgOvernatting = () => {
             </Typography>
             <Typography className={"apply-scroll-animation"}>
               Fra Oslo går det tog til Rygge togstasjon som tar 45 min. Det tar
-              1 time å kjøre fra Oslo til Larkollen
+              1 time å kjøre fra Oslo til Larkollen.
             </Typography>
           </Box>
           <Box maxWidth={"300px"}>
@@ -94,9 +94,9 @@ const TransportOgOvernatting = () => {
               <b>Fra Gardermoen</b>
             </Typography>
             <Typography className={"apply-scroll-animation"}>
-              Fra Gardermoen går det enten flybuss FB11 Fredrikstad som tar
-              1time og 40 min alternativt kan man ta tog til Oslo S og videre
-              tog til Moss/Rygge
+              Fra Gardermoen går det enten flybuss eller tog. Flybuss FB11
+              Fredrikstad til Rygge E6 tar 1 time og 40 min. Alternativt kan man
+              ta tog til Oslo S og videre tog til Moss/Rygge.
             </Typography>
           </Box>
           <Box maxWidth={"300px"}>

@@ -29,8 +29,8 @@ const TimeLine = () => {
         <Box className={"apply-scroll-animation"}>
           <Typography variant="h2">Bordsetting</Typography>
           <Typography marginBottom={2} maxWidth={"300px"}>
-            Videre blir det middag, god stemning, kake og kaffe og selvfølgelig
-            fest!
+            Videre blir det grillmat, god stemning, kake og kaffe og
+            selvfølgelig fest!
           </Typography>
         </Box>
       </TimeLineItem>

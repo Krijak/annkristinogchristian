@@ -52,13 +52,13 @@ const Informasjon = () => {
         </Box>
         <Box className={"apply-scroll-animation"}>
           <Typography variant="h2" mt={4}>
-            DRESSCODE
+            DRESSCODE:Dress
           </Typography>
           <Typography mt={1}>
-            Sommerlig og pyntet! Mørk dress eller lys lindress for herrene og
-            kort eller sid sommerkjole for damene. Det er gress og grus i hagen
-            så de høyeste stilettene er gjerne ikke det mest praktiske. Lave
-            eller høye sko som er god å danse i er perfekt!{" "}
+            Vi ønsker sommerfarger, kort eller sid kjole eller det du er
+            komfortabel i. Det er gress og grus i hagen så de høyeste stilettene
+            er gjerne ikke det mest praktiske. Lave eller høye sko som er god å
+            danse i er perfekt!
           </Typography>
         </Box>
         <Box className={"apply-scroll-animation"}>
