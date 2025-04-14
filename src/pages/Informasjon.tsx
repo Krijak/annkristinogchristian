@@ -52,7 +52,7 @@ const Informasjon = () => {
         </Box>
         <Box className={"apply-scroll-animation"}>
           <Typography variant="h2" mt={4}>
-            DRESSCODE:Dress
+            DRESSCODE: Dress
           </Typography>
           <Typography mt={1}>
             Vi ønsker sommerfarger, kort eller sid kjole eller det du er
